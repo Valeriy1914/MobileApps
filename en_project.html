@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main page</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="Untitled-5.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js">
+    </script>
+    
+</head>
+
+
+	<script src="jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">// <![CDATA[
+		$(document).ready(function(){
+    		$(".hider").click(function(){
+        		$("#hidden").slideToggle("slow");
+        	return false;
+    		});
+		});
+// ]]>
+	</script>
+
+
+<body link="#CCCCCC" alink="#FFFFFF" vlink="#CCCCCC">
+	<div id="main">
+    	<img class="cam" src="web.png">
+		<div class="prokladka"></div>
+		<div id="header">
+    		<div id="logo">
+        	<img class="logo" src="logot.png">
+        	</div><!--logo-->
+        
+        	<div id="head">
+        		AUTHOR'S PROGRAMS FOR MOBILE PHONES <br>
+        		Mobile app development
+        	</div><!--head-->
+        
+			<div class="icons">
+				<a href="https://twitter.com/valeriy_skachko" title="twitter">
+                <span class="fa-stack fa-lg">
+  				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-twitter fa-stack-1x"></i>
+				</span>
+                </a>
+
+				<a href=" https://www.linkedin.com/profile/view?id=213961616" title="linkedin">
+                <span class="fa-stack fa-lg">
+  				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+  				<i id="icons" class="fa fa-linkedin fa-stack-1x"></i>
+				</span>
+                </a>
+
+				<a href="https://www.facebook.com/valeriy.skachko?fref=nf" title="facebook">
+                <span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-facebook fa-stack-1x"></i>
+				</span>
+                </a>
+
+ 				<a href="https://vk.com/valeriy_skachko" title="vk">
+                <span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa fa-vk fa-stack-1x"></i>
+				</span>
+                </a>
+
+			</div><!--icons-->
+        
+	</div><!--header-->
+    
+   
+    <div id="lang">
+    	<a href="en_project.html" title="english"><img class="en" src="en.png"></a>
+    	<a href="project.html" title="русский"><img class="ru" src="ru.gif"></a>
+    </div>
+    
+<!--OSNOVA----------------------------------------->
+
+	<div id="osnova">
+    
+		<div id="menuu">
+			<a href="en_project.html"><div class="buttom">Main</div></a><br>
+            <a href="en_app.html"><div class="buttom">Apps</div></a><br>
+            <a href="en_personal.html"><div class="buttom">
+About me</div></a><br>
+            <a href="en_contacts.html"><div class="buttom">Contacts</div></a>     
+        </div><!--menuu-->
+        
+        <div id="content">
+			<p>Welcome!</p><br>
+			<p>Do you use a mobile phone? Make a call, send SMS. At some point you realize that the opportunities that laid the manufacturer of your phone you will get little, and you begin to install any additional software. But, often, of the program you want is not in sight, or it is not compatible with your mobile phone. Or maybe it is paid - and oh, how you pay do not want.</p>
+       		<p>I too was in that situation, I recognize any of this. Out of this situation was found quickly - I started writing software for phones that I needed. And began to share with others.</p>
+      		<p> I offer you a large number of programs in Java ME (which will work on most regular phones, as well as on the phones with the Symbian OS and Bada) and Android...</p>
+       		
+       
+<!--Скрытый текст----------------------------->
+       	<div id="hidden" style="display: none;"
+  
+       		</p> 
+       		<p>If you have any comments, ideas for new programs, proposals for collaboration - I am happy to read them. Contact all your questions, you can convenient way for you in the Contact section.</p>
+       		<p>The following quote links to resources from which you can download my program.</p>
+            <p>Best Regards, Valeriy Skachko</p>
+            
+            </div><!--скрытый текст-->
+            
+			<a href="" class="hider">...Read more</a>
+        </div><!--content-->
+        
+        <div id="sidebar">
+        	<div ><img class="tel" src="55.png"><img id="visibles" src="1.png"><div id="ten"></div></div>
+       
+      		<script>
+				var gall = new Array ("1.png","2.jpg","3.png","4.jpg","5.png","6.gif","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg");
+				var i =0;
+				function slide ()
+				{
+					document.getElementById('visibles').setAttribute ("src", gall[Math.round(Math.random()*10)]);
+				}
+				setInterval(slide,2000);
+			</script>
+       
+        </div>
+      
+     </div>
+     <div class="hr"></div>
+     
+<!--FOOTER--------------------------------------->
+
+     <div id="footer">
+     	
+     	Copyright ©  2010 - <span id="year"></span> Valeriy V. Skachko <br>
+        All Rights Reserved<br>
+        <a class="footer" href="contacts.html">Contact developer</a> <br>
+        
+    	<script>
+		var nowYear = new Date ();
+		document.getElementById('year').innerHTML = nowYear.getFullYear();
+	 	</script>
+         </div>
+         
+         <div id="panel">
+         
+         	<img class="panelleft" src="panel left.jpg">
+         	<div class="panelabsol"> 
+         		<span id="time"></span>
+         		<img class="panelright" src="panel right.jpg">
+         	</div>
+         <script>
+		 	var timenow = new Date ();
+		 	if (timenow.getMinutes()<10)
+			{
+				timenow.getMinutes()="0" + timenow.getMinutes()
+			}
+			if (timenow.getHours()<10)
+			{
+				timenow.getHours()="0" + timenow.getHours()
+			}
+		 	
+			document.getElementById('time').innerHTML = timenow.getHours() + ":" + timenow.getMinutes();	 
+		 	
+		 </script>
+         
+        </div>
+         
+         
+         <div class="prokladka"></div>
+</div>
+
+
+    
+</body>
+</html>

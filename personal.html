@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About me</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="personal.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body link="#CCCCCC" alink="#FFFFFF" vlink="#CCCCCC">
+	<div id="main">
+    	<img class="cam" src="web.png">
+		<div class="prokladka"></div>
+<!--HEAD----------------------------------------------->
+		<div id="header">
+            
+    		<div id="logo">
+        		<img class="logo" src="logot.png">
+       		</div>
+        
+        	<div id="head">
+        Авторские программы для мобильных устройств <br>
+        Mobile app development
+        	</div>
+        
+        	<div class="icons">
+        		<a href="https://twitter.com/valeriy_skachko" title="twitter">
+                <span class="fa-stack fa-lg">
+  				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+  				<i id="icons" class="fa fa-twitter fa-stack-1x"></i>
+				</span>
+                </a>
+
+				<a href=" https://www.linkedin.com/profile/view?id=213961616" title="linkedin">
+                	<span class="fa-stack fa-lg">
+					<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+					<i id="icons" class="fa fa-linkedin fa-stack-1x"></i>
+					</span>
+                </a>
+
+				<a href="https://www.facebook.com/valeriy.skachko?fref=nf" title="facebook">
+                <span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-facebook fa-stack-1x"></i>
+				</span>
+                </a>
+
+ 				<a href="https://vk.com/valeriy_skachko" title="vk"><span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa fa-vk fa-stack-1x"></i>
+				</span>
+				</a>
+
+			</div><!--icons-->
+        
+		</div><!--header-->
+    
+    	<div id="lang">
+    		<a href="en_personal.html" title="english"><img class="en" src="en.png"></a>
+   			<a href="personal.html" title="русский"><img class="ru" src="ru.gif"></a>
+    	</div>
+
+ <!--OSNOVA--------------------------------------------------->   
+
+		<div id="osnova">
+    
+     		<div id="menuu">
+        		<a href="project.html"><div class="buttom">Главная</div>
+                </a><br>
+            	<a href="app.html"><div class="buttom">Приложения</div>
+                </a><br>
+            	<a href="personal.html"><div class="buttom">Обо мне</div>
+                </a><br>
+            	<a href="contacts.html"><div class="buttom">Контакты</div>
+                </a> <br><br><br> 
+          
+        	</div><!--menuu-->
+        
+			<div id="content">
+        		<img class="valera"  src="Valera.jpg">
+       			<p>И снова здравствуйте!</p><br>
+       			<p>Пора бы уже и познакомиться! Меня зовут Валерий.</p>
+       			<p>Программированием увлекаюсь с детства.
+       			<p>В 2003 году была опубликована моя статья <a class="ssylka" href="http://www.acronis.com/ru-ru/company/inpress/2003/09-ua-mycomp-partitionexpert.html">"Эксперт в дисковом деле"</a></p>
+       			<p>Позднее вышла <a class="ssylka" href="http://www.linuxrsp.ru/artic/vkus.html">статья об ОС Linux </a></p>
+       
+        		<p>А вот идея писать мобильные приложения пришла ко мне не так давно, в 2010 году.</p>
+      			<p> С тех пор я создал более 100 приложений, большая часть из которых находятся в свободном доступе. Я с радостью делюсь с Вами своими находками в разделе <a class="ssylka" href="">Контакты</a> </p>
+<br>     
+      
+<p>С Уважением, Валерий Скачко.</p><br><br><br>
+        	</div><!--Content-->
+
+     	</div><!--osnova-->
+        
+     <div class="hr"></div>
+<!--FOOTER-------------------------------------------->
+		<div id="footer">
+     	
+     		Copyright ©  2010 - <span id="year"></span> Valeriy V. Skachko <br>
+        	All Rights Reserved<br>
+        	<a class="footer" href="contacts.html">Связаться с разработчиком</a> <br>
+        
+    		<script>
+				var nowYear = new Date ();
+				document.getElementById('year').innerHTML = nowYear.getFullYear();
+	 		</script>
+        </div><!--footer-->
+        
+<!--PANEL------------------------------------------->
+		<div id="panel">
+         
+			<img class="panelleft" src="panel left.jpg">
+         	<div class="panelabsol"> 
+         		<span id="time"></span>
+         		<img class="panelright" src="panel right.jpg">
+         	</div>
+         	<script>
+		 		var timenow = new Date ();
+		 		if (timenow.getMinutes()<10)
+				{
+				timenow.getMinutes()="0" + timenow.getMinutes()
+				}
+				if (timenow.getHours()<10)
+				{
+				timenow.getHours()="0" + timenow.getHours()
+				}
+		 	
+				document.getElementById('time').innerHTML = timenow.getHours() + ":" + timenow.getMinutes();	 
+		 	</script>
+         
+        </div><!--panel-->
+        
+        <div class="prokladka"></div>
+</div><!--main-->
+    
+</body>
+</html>

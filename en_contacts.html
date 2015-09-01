@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contacts</title>
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="contacts.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body link="#CCCCCC" alink="#FFFFFF" vlink="#CCCCCC">
+	<div id="main">
+    <img class="cam" src="web.png">
+    	<div class="prokladka"></div>
+<!--HEAD--------------------------------------->
+		<div id="header">
+    		<div id="logo">
+        	<img class="logo" src="logot.png">
+        	</div>
+        
+        	<div id="head">
+        		AUTHOR'S PROGRAMS FOR MOBILE PHONES <br>
+        		Mobile app development
+        	</div>
+        
+         	<div class="icons">
+        		<a href="https://twitter.com/valeriy_skachko" title="twitter">
+                <span class="fa-stack fa-lg">
+  				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-twitter fa-stack-1x"></i>
+				</span></a>
+
+				<a href=" https://www.linkedin.com/profile/view?id=213961616" title="linkedin"><span class="fa-stack fa-lg">
+ 				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-linkedin fa-stack-1x"></i>
+				</span></a>
+
+ 				<a href="https://www.facebook.com/valeriy.skachko?fref=nf" title="facebook"><span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-facebook fa-stack-1x"></i>
+				</span></a>
+
+				<a href="https://vk.com/valeriy_skachko" title="vk"><span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-vk fa-stack-1x"></i>
+				</span></a>
+		
+		
+			</div><!--icons-->
+        
+		</div><!--header-->
+    
+    	<div id="lang">
+    		<a href="en_contacts.html" title="english"><img class="en" src="en.png"></a>
+    		<a href="contacts.html" title="русский"><img class="ru" src="ru.gif"></a>
+    	</div>
+
+<!--OSNOVA----------------------------------------->
+		<div id="osnova">
+    
+     		<div id="menuu">
+        		<a href="en_project.html"><div class="buttom">Main</div>
+                </a><br>
+            	<a href="en_app.html"><div class="buttom">Apps</div></a><br>
+            	<a href="en_personal.html"><div class="buttom">About Me</div>
+                </a><br>
+            	<a href="en_contacts.html"><div class="buttom">Contacts</div>
+                </a><br><br><br>
+            
+        	</div><!--menuu-->
+        
+			<div id="content">
+				<p>To contact me online at the following addresses:</p><br>
+				<div class="addresss">
+					<p>&bull; ICQ: 227376960 </p >
+					<p>&bull; e-mail: valeriy_skachko@ukr.net</p>
+					<p>&bull; Skype: valeriy_skachko</p><br><br>
+				</div>
+
+				<p>Links to pages in the social. networks:</p>
+				<p><a class="ssylka" href="https://twitter.com/valeriy_skachko">Twitter </a></p>
+				<p><a class="ssylka" href=" https://www.linkedin.com/profile/view?id=213961616">Linkedin</a></p>
+				<p><a class="ssylka" href="https://www.facebook.com/valeriy.skachko?fref=nf">FaceBook</a></p>
+				<p><a class="ssylka" href="https://vk.com/valeriy_skachko">VK</a></p>
+
+			</div><!--content-->
+        
+		</div><!--osnova-->
+        
+     <div class="hr"></div>
+     
+<!--FOOTER----------------------------------------------->
+		<div id="footer">
+     	
+     		Copyright ©  2010 - <span id="year"></span> Valeriy V. Skachko <br>
+        	All Rights Reserved<br>
+        	<a class="footer" href="contacts.html">Contact developer
+            </a> <br>
+        
+    		<script>
+				var nowYear = new Date ();
+				document.getElementById('year').innerHTML = nowYear.getFullYear();
+	 		</script>
+         </div><!--footer-->
+         
+<!--PANEL--------------------------------------------------->
+         <div id="panel">
+         
+         	<img class="panelleft" src="panel left.jpg">
+         	<div class="panelabsol"> 
+         		<span id="time"></span>
+         		<img class="panelright" src="panel right.jpg">
+         	</div>
+         <script>
+		 	var timenow = new Date ();
+		 	if (timenow.getMinutes()<10)
+			{
+				timenow.getMinutes()="0" + timenow.getMinutes()
+			}
+			if (timenow.getHours()<10)
+			{
+				timenow.getHours()="0" + timenow.getHours()
+			}
+		 	
+			document.getElementById('time').innerHTML = timenow.getHours() + ":" + timenow.getMinutes();	 
+		 	
+		 </script>
+         
+        </div><!--panel-->
+        
+         
+         <div class="prokladka"></div>
+      
+	</div><!--main-->
+    
+</body>
+</html>

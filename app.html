@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App</title>
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body link="#CCCCCC" alink="#FFFFFF" vlink="#CCCCCC">
+	<div id="main">
+    <img class="cam" src="web.png">
+    	<div class="prokladka"></div>
+<!--HEAD--------------------------------------->
+		<div id="header">
+    		<div id="logo">
+        	<img class="logo" src="logot.png">
+        	</div>
+        
+        	<div id="head">
+        		Авторские программы для мобильных устройств <br>
+        		Mobile app development
+        	</div>
+        
+         	<div class="icons">
+        		<a href="https://twitter.com/valeriy_skachko" title="twitter">
+                <span class="fa-stack fa-lg">
+  				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-twitter fa-stack-1x"></i>
+				</span></a>
+
+				<a href=" https://www.linkedin.com/profile/view?id=213961616" title="linkedin"><span class="fa-stack fa-lg">
+ 				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-linkedin fa-stack-1x"></i>
+				</span></a>
+
+ 				<a href="https://www.facebook.com/valeriy.skachko?fref=nf" title="facebook"><span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-facebook fa-stack-1x"></i>
+				</span></a>
+
+				<a href="https://vk.com/valeriy_skachko" title="vk"><span class="fa-stack fa-lg">
+				<i id="color" class="fa fa-square-o fa-stack-2x"></i>
+				<i id="icons" class="fa fa-vk fa-stack-1x"></i>
+				</span></a>
+		
+			</div><!--icons-->
+        
+		</div><!--header-->
+    
+    	<div id="lang">
+    		<a href="en_app.html" title="english"><img class="en" src="en.png"></a>
+    		<a href="app.html" title="русский"><img class="ru" src="ru.gif"></a>
+    	</div>
+
+<!--OSNOVA----------------------------------------->
+		<div id="osnova">
+    
+     		<div id="menuu">
+        		<a href="project.html"><div class="buttom">Главная</div>
+                </a><br>
+            	<a href="app.html"><div class="buttom">Приложения</div></a><br>
+            	<a href="personal.html"><div class="buttom">Обо мне</div>
+                </a><br>
+            	<a href="contacts.html"><div class="buttom">Контакты</div>
+                </a><br><br><br>
+            
+        	</div><!--menuu-->
+        
+			<div id="content">
+            Мои программы Вы можете найти на следующих сайтах:
+				<a href="http://apps.opera.com/en_us/free_catalog.php?vendor_id=8626"><div id="imm" class="buttomp">Opera<img class="im" src="opera.png"></div></a>
+
+				<a href="http://www.mobiles24.co/search/user/404_not_found/free-android-apps"><div id="imm" class="buttomp">Mobiles24<img class="im" src="mob24.png"></div></a>
+                
+                <a href="http://www.mobango.com/404-not-found/?username=404_not_found&type=user"><div id="imm" class="buttomp">Mobango<img class="im" src="mon.png"></div></a>
+                
+                 <a href="http://www.androidfreeware.net/developer-1945.html"><div id="imm" class="buttomp">Android freeware<img class="im" src="andr.png"></div></a>
+                
+                 <a  href="https://www.windowsphone.com/ru-RU/store/publishers?publisherId=Valeriy%2BSkachko"><div id="imm" class="buttomp">Windows Phone <br>&nbsp;&nbsp;&nbsp;&nbsp;freeware<img class="im" src="win.png"></div></a>
+                
+                
+                
+                
+                
+			</div><!--content-->
+        
+		</div><!--osnova-->
+        
+     <div class="hr"></div>
+     
+<!--FOOTER----------------------------------------------->
+		<div id="footer">
+     	
+     		Copyright ©  2010 - <span id="year"></span> Valeriy V. Skachko <br>
+        	All Rights Reserved<br>
+        	<a class="footer" href="contacts.html">Связаться с разработчиком
+            </a> <br>
+        
+    		<script>
+				var nowYear = new Date ();
+				document.getElementById('year').innerHTML = nowYear.getFullYear();
+	 		</script>
+         </div><!--footer-->
+         
+<!--PANEL--------------------------------------------------->
+         <div id="panel">
+         
+         	<img class="panelleft" src="panel left.jpg">
+         	<div class="panelabsol"> 
+         		<span id="time"></span>
+         		<img class="panelright" src="panel right.jpg">
+         	</div>
+         <script>
+		 	var timenow = new Date ();
+		 	if (timenow.getMinutes()<10)
+			{
+				timenow.getMinutes()="0" + timenow.getMinutes()
+			}
+			if (timenow.getHours()<10)
+			{
+				timenow.getHours()="0" + timenow.getHours()
+			}
+		 	
+			document.getElementById('time').innerHTML = timenow.getHours() + ":" + timenow.getMinutes();	 
+		 	
+		 </script>
+         
+        </div><!--panel-->
+        
+         
+         <div class="prokladka"></div>
+      
+	</div><!--main-->
+    
+</body>
+</html>

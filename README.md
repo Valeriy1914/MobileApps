@@ -1,3 +1,0 @@
-# MobileApps
-
-My Site
